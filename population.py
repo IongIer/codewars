@@ -6,11 +6,9 @@
 
 # aug is an integer, percent a positive or null floating number, p0 and p are positive integers (> 0)
 
-
+from math import floor
 def nb_year(p0, percent, aug, p, year=0):
-    while p0 <= p:
-        p0 = p0 + p0 * (percent / 100) + aug
+    while int(p0) < p:
+        p0 = floor(p0 + p0 * (percent / 100) + aug)
         year += 1
-        if p0 >= p:
-            return year
-    return year + 1
+    return year
