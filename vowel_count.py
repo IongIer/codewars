@@ -10,6 +10,5 @@ def get_count(sentence):
     count = 0
     for char in sentence:
         if char in vowls:
-            count +=1
+            count += 1
     return count
-    
