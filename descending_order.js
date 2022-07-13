@@ -8,3 +8,4 @@ function descendingOrder(n) {
   });
   return Number(numbers.reverse().join(""));
 }
+ 
