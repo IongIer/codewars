@@ -1,6 +1,5 @@
-#easiest 5kyu
+# easiest 5kyu
+
 
 def alphanumeric(password):
     return password.isalnum()
-    
-        
